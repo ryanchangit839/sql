@@ -91,7 +91,7 @@ FROM product
 /* 1. Write a query that INNER JOINs the vendor table to the vendor_booth_assignments table on the 
 vendor_id field they both have in common, and sorts the result by market_date, then vendor_name.
 Limit to 24 rows of output. */
---QUERY 6
+--QUERY 7
 
 SELECT
 vb.vendor_id,
@@ -115,7 +115,7 @@ LIMIT 24;
 -- AGGREGATE
 /* 1. Write a query that determines how many times each vendor has rented a booth 
 at the farmer’s market by counting the vendor booth assignments per vendor_id. */
---QUERY 7
+--QUERY 8
 
 SELECT vendor_id, COUNT(vendor_id) AS number_of_time_rented
 FROM vendor_booth_assignments
@@ -130,7 +130,7 @@ sticker to everyone who has ever spent more than $2000 at the market. Write a qu
 of customers for them to give stickers to, sorted by last name, then first name. 
 
 HINT: This query requires you to join two tables, use an aggregate function, and use the HAVING keyword. */
---QUERY 8
+--QUERY 9
 
 SELECT 
 cp.customer_id,
@@ -187,7 +187,7 @@ WHERE vendor_id = 10
 HINT: you might need to search for strfrtime modifers sqlite on the web to know what the modifers for month 
 and year are! 
 Limit to 25 rows of output. */
---QUERY 10
+--QUERY 11
 
 
 
@@ -201,7 +201,7 @@ Remember that money spent is quantity*cost_to_customer_per_qty.
 HINTS: you will need to AGGREGATE, GROUP BY, and filter...
 but remember, STRFTIME returns a STRING for your WHERE statement...
 AND be sure you remove the LIMIT from the previous query before aggregating!! */
---QUERY 11
+--QUERY 12
 
 
 

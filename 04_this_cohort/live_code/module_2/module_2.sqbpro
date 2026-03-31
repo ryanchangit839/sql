@@ -103,6 +103,11 @@ END AS inflation
 FROM customer_purchases
 
 
+SELECT *
+,CASE WHEN cost_to_customer_per_qty &lt; 1.00
+THEN cost_to_customer_per_qty*5
+ELSE cost_to_customer_per_qty
+END AS inflation
 
 
 
@@ -223,6 +228,10 @@ LEFT JOIN customer_purchases as cp
 		ON p.product_id = cp.product_id;
 
 /* 2. Directions of LEFT JOINs matter ...*/
+SELECT  DISTINCT
+p.product_id 
+,cp.product_id as [cp.product_id]
+,product_name
 
 SELECT DISTINCT
 p.product_id
@@ -236,7 +245,16 @@ LEFT JOIN product as p
 
 
 /* 3. As do which values you filter on ... */
+SELECT  DISTINCT
+p.product_id 
+,cp.product_id as [cp.product_id]
+,product_name
 
+FROM product as p
+LEFT JOIN customer_purchases as cp
+	ON p.product_id = cp.product_id
+
+WHERE p.product_id BETWEEN 1 AND 6  -- if we pick product, 6 rows (1-6) but if we pick cp....only 5 rows because zinnias never existed in customer purchases table
 
 
 
