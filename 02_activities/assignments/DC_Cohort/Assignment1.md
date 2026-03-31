@@ -209,5 +209,8 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+I am from Macau, a city in China, which is also a special administrative region (SAR) of China- we have our own passport, currency, government system, etc. but not a big population/ landmass. I often get into interesting situations in times of application for different things. Most of the time, Macau is listed as a separate entity under country, which is not true; some other time, it is not listed at all (this often leads to problem downstream). This would fall into the case where generalization may lead to confusion/ issues. At the same time, I understand the difficulties that go into building a database and the needs to include all countries/ passports, and on top of that, to fully understand the political stance of the citizen of the country. 
+Referring back to the article about the issue with gender- where Jehangir Amjad advocated for a more “creative future-proof system architecture” in the case of gender; gender has moved from “boolean field” to a flexible ENUM (enumerated) data type, and Jehangir Amjad claimed that the lack of design thinking is the underlying cause of why such issues emerge. However, I tend to think that there is a bit of overlap in his claim for “creativity” and hindsight bias. I
+The underlying principle of data science is to build the best solution for organizing/ connecting/ stratifying data. For the longest time, the “best solution” is the “fastest”, “most direct” way, but societal progression is now necessitating data science is adapt a more inclusive build. Personally, I still believe that generalization is an inherent feature of data science. However, it would be beneficial if an independent database oversight agency exists, where it monitors whether key (governmental) databases are up to date with societal norms (not sure if something like this already exists).
+
 ```
